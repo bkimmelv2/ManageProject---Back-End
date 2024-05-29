@@ -5,8 +5,8 @@ const router = express.Router()
 const User = require('../models/users.js')
 
 
-router.get('/', (req, res) => {
-  res.json('Hello World')
+router.get('/', async (req, res) => {
+  res.json(await User.find())
 })
 
 router.post('/createaccount', async (req, res) => {
@@ -20,7 +20,7 @@ router.post('/createaccount', async (req, res) => {
       
     } catch (err) {
         console.log(err)
-        res.status(500).send('Please try a different username or password.')
+        res.json(err)
     }
   }
           
@@ -36,17 +36,15 @@ router.put('/login', async (req, res) => {
           if(isAMatch) {
             res.json(foundUser)
             console.log('login successful!')
-          }        
+          } else {
+            res.json('Please try a different username or password.')
+          }       
         
     } catch (err) {
         console.log(err)
-        res.status(500).send('Please try a different username or password.')
+        res.json('Please try a different username or password.')
     }
   
-  
-
-
-    
 }
 )  
 
