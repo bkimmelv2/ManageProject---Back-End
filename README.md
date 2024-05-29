@@ -1,10 +1,10 @@
-# MangeProject App
+# ManageProject App
 
 <h3>Description</h3>
 
 ManageProject is an application that can be utilized by users who need to mange their projects specifically for those working in software engineering.
 
-The manageProject app has two repositories:</br>
+The manageProject app has two repositories:
  - MangeProject---Front-End: is for front-end of the app with React (No EJS)
  - MangeProject ---Back-End: is for back-end of the app with with mongoose
 
@@ -13,12 +13,12 @@ Users will need to signup and login if they need to access the app.
 
  <h2> ManageProject---Front-End </h2></br>
  <h3>Wireframes</h3>
- - Please see the wireframe for the Create Account/Login page below: </br></br>
+ The front-end repository can be accessed through the link below: </br> </br>
+ https://github.com/davedawita/ManageProject---Front-End.git  </br> </br>
  
+ - Please see the wireframe for the Create Account/Login page below: </br></br> 
 
-![image](https://github.com/davedawita/ManageProject---Back-End/assets/155693018/fb346d60-8ded-4d2f-8884-485f5ea7a19c)
-
-
+![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/e5ae9793-1608-47ab-afcf-24db53e466f7)
 
 
  - Please see the wireframe for the index page below: </br></br>
@@ -29,10 +29,6 @@ Users will need to signup and login if they need to access the app.
  - Please see the wireframe for the show page page below: </br></br>
 
  ![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/59f4f250-f00e-40b8-a43e-f59cc3c9136b)
-
-
- 
-
 
 
 **<h3>User Stories</h3>** 
@@ -48,6 +44,10 @@ Users will need to signup and login if they need to access the app.
  - As a user, I want to be able to edit the details of any task, so that I can update its information or move it to a different list as needed.</br>
  - As a user, I want to be able to delete a task, so that if it is no longer necessary it will no longer appear in the list.</br>
  - As a user, I want to be able to log out of my account, so that I can ensure the security of my information and prevent others from using my account.
+
+The folder structure includes components: Header & main & pages: Create, Edit, Index, & Show.</br>
+The App is basically codded in App.js and all user log-in/createaccount code is in App.js.</br>
+
 <h2>ManageProject ---Back-End</h2>
 
 <h3>MODELS:</h3> 
@@ -71,11 +71,10 @@ const taskSchema = new mongoose.Schema({</br>
 <h3>ROUTES:</h3>
 The following list of routes are included:</br>
 
-![image](https://github.com/davedawita/ManageProject---Back-End/assets/155693018/3edf9053-fc8e-409a-a536-f9c1d35312ea)
+![image](https://github.com/davedawita/ManageProject---Front-End/assets/155693018/d19eac79-0bde-42a4-a446-b2401a0c2e51)
 
 
-<h2>To Be Edited</h2>
-<h4>In controllers/tasks.js:</h4> </br></br>
+<h4>In controllers/tasks.js:</h4> </br>
 
 GET/Tasks allows users to see the main project board with all tasks.</br>
 POST/Tasks allows users to add a task to the project board.</br>
@@ -83,20 +82,21 @@ PUT/Tasks/:id allows users to update the specific task's details</br>
 DELETE/Tasks/:id allows users to delete tasks</br>
 
 
-<h4>In controllers/users.js:</h4> </br></br>
-GET/tasks/login allows users to login</br>
-POST/tasks allows users to have user name and password</br>
-DELETE/tasks/logout allows users to logout</br></br>
+<h4>In controllers/users.js:</h4> </br>
+PUT/login allows users to login. </br>
+POST/createaccount allows users to have user name and password</br>
 
-We will also include components: Header & main.
+handleLogout() function on the front-end allows users to logout</br></br>
+
 
 <h2>Installation Instructions</h2>
- - Please use the link below to install the app. Enjoy the app!   </br>
+ - Please use the link below to install the app. Enjoy the app!   </br> </br>
+ https://manage-project-app.netlify.app <br> </br>
+
  
- 
- - If you are on a browser, use of Google chrome is highly recommended.    </br>
+If you are on a browser, use of Google chrome is highly recommended.    </br>
 <h2>Technologies used</h2>
-REACT, Javascript, Node.js, CSS, ejs, Express, MongoDB, Mongoose, Postman, and Figma(Only for wireframes without Dev Mode)   </br>
+REACT, Javascript, Node.js, CSS, ejs, Express, MongoDB, Mongoose, Postman, and Figma(Only for wireframes without Dev Mode). We can also say that we use MERN (Mongodb, Express, React, Node.js) stack.  </br>
 
 <h2>MVP Goals</h2>
 Full CRUD(Create, Read, Update, Delete) Functionality. </br>
